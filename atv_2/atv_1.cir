@@ -1,0 +1,17 @@
+Circuito RD – Usa um diodo como varactor (varicap)
+*Vname N1 N2 pulse(VL VH TD TR TF PW T)
+Vin 2 0 pulse(0 10.0m 2n 0 0 2 4)
+#Vp 1 0 dc 16
+R1 2 3 1k
+C1 3 0 220u
+.model SMV1493 D (IS = 1e-14 RS = 0.1 N = 1.024 CJ0 = 2.8e-11 VJ = 0.63 M = 0.47 BV = 100 IBV = 1e-3)
+.tran 1m 4
+.end
+
+
+.control
+run
+plot v(1) v(3)
+set filetype=ascii
+write results.txt v(2) v(3)
+.endc

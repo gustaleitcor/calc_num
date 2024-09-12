@@ -1,5 +1,7 @@
-function euler(f, y, x_0, y_0, n)
-    h = (y - x_0) / n
+function euler(f, x, x_0, y_0, n)
+    println("comecando euler...")
+
+    h = (x - x_0) / n
     
     for i in 1:n
         y_0 = y_0 + h * f(x_0, y_0)
@@ -8,5 +10,7 @@ function euler(f, y, x_0, y_0, n)
     end
 
     println(y_0)
-    return y_0
+
+    println("fim euler...")
+    return x_0, y_0
 end

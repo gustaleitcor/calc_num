@@ -1,9 +1,9 @@
 function rugen_cutta_3(f, x_des, x_0, y_0, h, n)
-    
+
     #primeira iteracao (m = n-1)
     x_m = x_0
     y_m = y_0
-    
+
     x_n = 0
     y_n = 0
 
@@ -31,11 +31,11 @@ function rugen_cutta_3(f, x_des, x_0, y_0, h, n)
 end
 
 function rugen_cutta_4(f, x_des, x_0, y_0, h, n)
-    
+
     #primeira iteracao (m = n-1)
     x_m = x_0
     y_m = y_0
-    
+
     x_n = 0
     y_n = 0
 
@@ -54,7 +54,7 @@ function rugen_cutta_4(f, x_des, x_0, y_0, h, n)
 
         x_m = x_n
         y_m = y_n
-        
+
         println(x_n, " ", y_n)
 
         index = index + 1

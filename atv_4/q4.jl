@@ -30,7 +30,8 @@ function q_quatro()
 		x[i] = round(v)
 	end
 
-	println("x1: ", x[1], " | x2: ", x[2], " | x3: ", x[3], " | x4: ", x[4], " => norma: ", norm(m * x - b))
+	println("x1: ", x[1], " | x2: ", x[2], " | x3: ", x[3], " | x4: ", x[4])
+
 end
 
 export q_quatro
